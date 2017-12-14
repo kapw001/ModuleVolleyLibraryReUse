@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="volleywebrequest.com.volleylibrarymoduleforreuse.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onSave"
+            android:text="Save"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/getRequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRequest"
+            android:text="Request"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClear"
+            android:text="Clear"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onAdd"
+            android:text="Add"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/fetch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onFetch"
+            android:text="Fetch"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="volleywebrequest.com.volleylibrarymoduleforreuse.FragTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
